@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #434455;
+    --secondary-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --white-color: #ffffff;
+    --color-cloud: #F4F4FD;
+    --color-cornflower: #E7E9FC;
+}
+
+body {
+    background-color:var(--white-color);
+    color:var(--primary-color);
+}
+h2,h3{color: var(--secondary-color);}
+
+.list {
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.logo{
+    color: var(--accent-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo :hover, .logo :focus{color: var(--accent-color);}
+
+
+
+
+/* HEADER */
+.logo-header{
+    color: var(--secondary-color);
+}
+
+
+.site-nav .link {
+    color: var(--secondary-color);
+}
+.site-nav .link:hover, .site-nav .link:focus{color: var(--accent-color);}
+
+
+.contacts .link{
+    color: var(--primary-color);
+}
+.contacts .link:hover, .contacts .link:focus{
+    color: var(--accent-color);
+}
+
+
+
+/* SECTION HERO */
+.hero{
+    background-color: var(--secondary-color) ;
+}
+.hero-title{
+    color: var(--white-color);
+}
+.hero-button{
+    color: var(--white-color);
+    background-color:var(--accent-color);
+}
+
+
+/* SECTION OUR FEATURES */
+.feature-list .title {
+    color: #2E2F42;
+}
+
+/* SECTION OUR WORK */
+/* SECTION OUR TEAM */
+
+
+
+/* FOOTER */
+footer{
+    background-color:var(--secondary-color);
+}
+.logo-footer{
+    color: var(--color-cloud);
+}
+footer .text{
+    color: var(--color-cornflower);
+}
+
+
+
+/* PORTFOLIO STYLES */
+.filters-button{
+    color: var(--accent-color);
+    background-color:var(--color-cloud);
+    border: 1px solid var(--color-cornflower);
+    border-radius: 4px;
+}
+.filters-button:hover, .filters-button:focus{
+    color: var(--white-color);
+    background-color:#404BBF;
+}
