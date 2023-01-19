@@ -1,13 +1,13 @@
 :root {
     --primary-text-color: #434455;
-    --secondary-title-color: #2E2F42;
+    --title-color: #2E2F42;
     --accent-color: #4D5AE5;
     --white-color: #ffffff;
     --color-cloud: #F4F4FD;
     --color-cornflower: #E7E9FC;
-    --color-ocean: #404BBF;
+    --hover-color: #404BBF;
 }
-/* COMPONENTS */
+
 body {
     background-color:var(--white-color);
     color:var(--primary-text-color);
@@ -15,15 +15,16 @@ body {
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
-h2,h3{color: var(--secondary-title-color);}
 
 .list {
     list-style: none;
 }
 
-.site-nav .link.curent {
-    color: var(--accent-color);
+/*========================= COMPONENTS============================= */
+.menu-link.current {
+    color: var(--hover-color);
 }
+
 .button {
     font-family: inherit;
     font-weight: 500;
@@ -34,129 +35,104 @@ h2,h3{color: var(--secondary-title-color);}
     cursor: pointer;
 }
 
-
-
-/* HEADER */
 .logo {
     color: var(--accent-color);
-
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
 }
-.logo :hover,
-.logo :focus {
-    color: var(--color-ocean);
-}
-
-.logo-header{
-    color: var(--secondary-title-color);
-}
-
-
-/* Navigation */
-.site-nav .link {
-    color: var(--secondary-title-color);
-    
-    font-weight: 500;
-    text-decoration: none;
-}
-.site-nav .link:hover, .site-nav .link:focus{color: var(--color-ocean);}
-
-
-
-/* Contacts */
-.contacts .link{
-    color: var(--primary-text-color);
-    
-    font-style: normal;
-    text-decoration: none;
-}
-.contacts .link:hover, .contacts .link:focus{
-    color: var(--color-ocean);
-}
-
-
-
-
-/* SECTION HERO */
-.hero{
-    background-color: var(--secondary-title-color) ;
-}
-.hero-title{
-    color: var(--white-color);
-
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-}
-.primary{
-    color: var(--white-color);
-    background-color:var(--accent-color);
-    
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
-}
-.primary:hover, .primary:focus{
-    background-color:var(--color-ocean);
-}
-
-
-
-
-
-/* COMMON STYLES FOR SECTIONS */
-.section .section-title {
+.section-title {
+    color: var(--title-color);
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
     text-transform: capitalize;
 }
-
-.features-list .title,
-.team-list .title,
-.portfolio-list .title {
+.features-list-title,
+.team-list-title,
+.portfolio-list-title {
+    color: var(--title-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
+/* ==============================HEADER=================================== */
+.logo-header{
+    color: var(--title-color);
+}
 
-/* SECTION OUR FEATURES */
+/* ============Menu================ */
+.menu-link {
+    color: var(--title-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu-link:hover, .menu-link:focus{color: var(--hover-color);}
 
-/* SECTION OUR WORK */
 
-/* SECTION OUR TEAM */
+/* ===========Contacts============== */
+.contacts-link{
+    color: var(--primary-text-color);
+    font-style: normal;
+    text-decoration: none;
+}
+.contacts-link:hover, .contacts-link:focus{
+    color: var(--hover-color);
+}
+
+/* ===================================SECTION HERO============================= */
+.hero{
+    background-color: var(--title-color);
+}
+.hero-title{
+    color: var(--white-color);
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+.hero-btn{
+    color: var(--white-color);
+    background-color:var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+}
+.hero-btn:hover, .hero-btn:focus{
+    background-color:var(--hover-color);
+}
+
+/* ================================SECTION OUR FEATURES========================= */
+
+/* ================================SECTION OUR WORK============================= */
+
+/* ================================SECTION OUR TEAM============================= */
+.team{
+    background-color: var(--color-cloud);
+}
 
 
-/* FOOTER */
-footer{
-    background-color:var(--secondary-title-color);
+/* =======================================FOOTER=============================== */
+.footer{
+    background-color:var(--title-color);
 }
 .logo-footer{
     color: var(--color-cloud);
 }
-footer .text{
+.footer-text{
     color: var(--color-cornflower);
 }
 
 
 
-
-
-
-
-
-/* PORTFOLIO STYLES */
-.secondary{
+/* ======================================PORTFOLIO STYLES=========================== */
+.filter-btn{
     color: var(--accent-color);
     background-color:var(--color-cloud);
     
     border: 1px solid var(--color-cornflower);
 }
-.secondary:hover, .secondary:focus{
+.filter-btn:hover, .filter-btn:focus{
     color: var(--white-color);
-    background-color:var(--color-ocean);
+    background-color:var(--hover-color);
 }
