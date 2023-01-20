@@ -13,7 +13,6 @@ body {
     color:var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
-    line-height: 1.5;
 }
 
 .list {
@@ -59,6 +58,11 @@ body {
     font-size: 20px;
     line-height: 1.2;
 }
+.features-list-text,
+.team-list-text,
+.portfolio-list-text{
+    line-height: 1.5;
+}
 /* ==============================HEADER=================================== */
 .logo-header{
     color: var(--title-color);
@@ -69,6 +73,7 @@ body {
     color: var(--title-color);
     font-weight: 500;
     text-decoration: none;
+    line-height: 1.5;
 }
 .menu-link:hover, .menu-link:focus{color: var(--hover-color);}
 
@@ -78,6 +83,7 @@ body {
     color: var(--primary-text-color);
     font-style: normal;
     text-decoration: none;
+    line-height: 1.5;
 }
 .contacts-link:hover, .contacts-link:focus{
     color: var(--hover-color);
@@ -121,6 +127,7 @@ body {
 }
 .footer-text{
     color: var(--color-cornflower);
+    line-height: 1.5;
 }
 
 
